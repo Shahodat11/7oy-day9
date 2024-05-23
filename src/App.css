@@ -17,7 +17,8 @@
 }
 
 .card {
-  width: 300px;
+  width: 200px;
+  height: 250px;
   padding: 20px;
   background-color: white;
   border: 1px solid #ccc;
@@ -27,18 +28,41 @@
   flex-direction: column;
   align-items: center;
 }
-
-.card h2 {
-  margin: 0 0 10px 0;
-}
-
-.card p {
-  margin: 5px 0;
-}
-
 .card img {
-  width: 100%;
-  height: auto;
+  width: 210px;
+  height: 190px;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+.nav-links{
+  min-width: 1330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+input{
+    padding-left: 8px;
+    width: 750px;
+    height: 40px;
+    border-radius: 8px;
+    outline-color: red;
+    border: 2px solid #ccc
+}
+h2{
+  padding-left: 20px;
+  color: #fff;
+}
+.nav{
+  width: 60px;
+  height: 20px;
+  color: #fff;
+  padding-right: 10px;
+}
+h1{
+  color: #000;
+}
+.img{
+  width: 1330px;
+  padding-bottom: 20px;
 }

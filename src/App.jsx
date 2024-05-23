@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import useStore from './context/Store';
 import './App.css';
+import Navbar from './components/navbar/Navbar';
+import Main from './components/main/Main';
 
 function App() {
   const { products, fetchProducts } = useStore();
@@ -11,14 +13,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Product List</h1>
+        <Navbar/>
+        <Main/>
       <div className="cards-container">
         {products.map(product => (
           <div key={product.id} className="card">
-            <h2>{product.title}</h2>
-            <p>{product.description}</p>
-            <p>Price: ${product.price}</p>
-            <img src={product.thumbnail} alt={product.title} />
+            <img src={product.images[0]} />
+            <h3>{product.title}</h3>
           </div>
         ))}
       </div>
